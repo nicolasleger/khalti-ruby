@@ -4,6 +4,7 @@ rvm:
   - 2.3.7
   - 2.4.4
   - 2.5.1
-script:
-  - export KHALTI_SECRET_KEY=your_secret_key
-  - bundle exec rspec
+env:
+  global:
+    - KHALTI_SECRET_KEY=your_secret_key
+script: bundle exec rspec
