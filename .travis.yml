@@ -4,7 +4,6 @@ rvm:
   - 2.3.7
   - 2.4.4
   - 2.5.1
-before_install: gem install bundler -v 1.16.1
 script:
   - export KHALTI_SECRET_KEY=your_secret_key
-  - bundle exec rspec spec
+  - bundle exec rspec
